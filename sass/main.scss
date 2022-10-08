@@ -1,0 +1,14 @@
+//-----utils styles------//
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//-------base styles-------//
+@import './base/base';
+@import './base/body';
+@import './base/container';
+@import './base/reset';
+
+//-------loyouts styles-------//
+@import './layout/contacts';
+@import './layout/footer';
