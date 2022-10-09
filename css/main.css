@@ -141,14 +141,6 @@ html {
   display: flex;
 }
 
-.shop__content::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  background-color: #e1e1e1;
-  display: block;
-}
-
 .shop__location {
   margin-bottom: 8px;
 }
@@ -164,6 +156,41 @@ html {
   line-height: 1.81;
   letter-spacing: 0.04em;
   color: #D6936D;
+}
+
+.shop__content--after::after {
+  content: "";
+  margin-bottom: 32px;
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+  display: block;
+}
+
+.shop__weekdays {
+  margin-bottom: 12px;
+}
+
+.shop__weekends {
+  margin-bottom: 32px;
+}
+
+.shop__days {
+  color: #131313;
+  line-height: 1.81;
+  font-weight: 500;
+}
+
+.shop__time {
+  color: #ABABAB;
+  line-height: 1.81;
+  font-weight: 500;
+}
+
+.shop__contact {
+  color: #131313;
+  line-height: 1.81;
+  font-weight: 500;
 }
 
 .page-footer {
