@@ -13,10 +13,21 @@ ul {
 ul {
   text-decoration: none;
   padding-left: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
   font-style: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 

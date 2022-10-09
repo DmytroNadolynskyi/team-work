@@ -1,0 +1,17 @@
+.page-footer{
+    padding-top: 19.5px;
+    padding-bottom: 62px;
+    background-color:$main-background-color ;
+
+    @media screen and(min-width:768px){
+padding-top: 20px;
+padding-bottom: 13px;
+        
+    }
+
+    @media screen and(min-width:1200px){
+        padding-top: 60px;
+        padding-bottom: 11px;
+        
+    }
+}

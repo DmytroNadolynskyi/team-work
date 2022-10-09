@@ -35,6 +35,7 @@ body {
   line-height: 176%;
   letter-spacing: 0.04em;
   font-style: normal;
+  margin: 0;
 }
 
 .container {
@@ -78,9 +79,107 @@ ul {
 ul {
   text-decoration: none;
   padding-left: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
   font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.section {
+  padding-bottom: 19.5px;
+  background-color: #84a178;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  gap: 32px;
+}
+
+.contacts__shop {
+  padding: 40px;
+  background-color: #ffffff;
+  width: 368px;
+  border-radius: 24px;
+}
+
+.shop__type {
+  margin-bottom: 32px;
+  height: 28px;
+  width: max-content;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  background-color: #f8d24e;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  display: flex;
+}
+
+.shop__content::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #e1e1e1;
+  display: block;
+}
+
+.shop__location {
+  margin-bottom: 8px;
+}
+
+.shop__link {
+  display: block;
+  color: #d6936d;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.81;
+  letter-spacing: 0.04em;
+  color: #D6936D;
+}
+
+.page-footer {
+  padding-top: 19.5px;
+  padding-bottom: 62px;
+  background-color: #84a178;
+}
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding-top: 20px;
+    padding-bottom: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 11px;
+  }
 }/*# sourceMappingURL=main.css.map */
