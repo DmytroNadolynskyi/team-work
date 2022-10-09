@@ -14,6 +14,7 @@ padding-bottom: 19.5px;
 .contacts__list{
     display: flex;
     gap: 32px;
+    margin-bottom: 64px;
 }
 .contacts__shop{
     padding: 40px;
@@ -49,7 +50,7 @@ padding-bottom: 19.5px;
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.81;
         
     
@@ -86,4 +87,49 @@ padding-bottom: 19.5px;
     color: $black-text-color;
     line-height: 1.81;
         font-weight: 500;
+}
+
+//-------------BUTTON-------------------//
+
+
+.contacts__btn-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.contacts-button{
+    width: 196px;
+    height: 42px;
+    gap:6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contacts-button--color{
+    background-color:$yellow-color ;
+}
+
+.contacts-button--border{
+    border: 2px solid #F8D24E;
+    background-color: $main-background-color;
+}
+.contacts__btn-text{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: $black-text-color;
+
+}
+.contacts__icon{
+
+width: 12px;
+height: 12px;
 }
