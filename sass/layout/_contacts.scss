@@ -11,7 +11,9 @@ padding-bottom: 19.5px;
     padding-bottom: 60px;
  }
 }
+
 .contacts__list{
+    
 margin-left: auto;
     margin-right: auto;
 margin-bottom: 32px;
@@ -27,13 +29,15 @@ margin-bottom: 32px;
         }
 }
 .contacts__shop{
+    
     margin-left: auto;
         margin-right: auto;
     @media screen and(max-width:767px) {
         margin-bottom: 19px;
 background-color: $footer-cards-background ;
 padding: 40px 32px;
-width:280px ;
+width: 280px;
+
 border-radius: 24px;
 &:last-child{
     margin-bottom: 0;
@@ -79,7 +83,7 @@ border-radius: 24px;
 }
 .shop__link{
     margin-bottom: 24px;
-    font-family: 'Montserrat';
+    font-family: $primary-font;
         font-weight: 500;
     display: block;
     color:$card-3-background;
@@ -87,6 +91,7 @@ border-radius: 24px;
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: #D6936D;
+    
 
     &:hover{
         text-decoration: underline;
@@ -154,6 +159,13 @@ margin-bottom: 12px;
     color: $black-text-color;
         font-weight: 500;
         font-size: 12px;
+        transition: color;
+        transition: $main-transition;
+
+        &:hover,
+        &:focus{
+            color:$yellow-color;
+        }
     
         @media screen and(min-width:768px) {
             
@@ -189,7 +201,7 @@ margin-bottom: 12px;
         margin-left: auto;
             margin-right: auto;
     }
-    
+        padding: 0;
     width: 196px;
     height: 42px;
     gap:6px;
@@ -199,22 +211,31 @@ margin-bottom: 12px;
     justify-content: center;
     border: 0;
     border-radius: 10px;
+    transition: border background-color;
+         transition: $main-transition;
+        &:focus .contacts__btn-text {
+            color: $white-text-color;
+        }
+        &:focus .contacts__icon{
+            stroke: $white-text-color;
+        }
 }
 
 .contacts-button--color{
+    // border: 2px solid #F8D24E;
+    
     background-color:$yellow-color ;
     &:hover{
         background-color:$accent-color;
+        // border: 2px solid $accent-color;
     }
-    &:focus{
-        color:$white-text-color;
-        display: block;
-    }
+    
     @media screen and(max-width:767px){
         margin-bottom: 16px;
     }
     
 }
+
 
 .contacts-button--border{
     border: 2px solid #F8D24E;
@@ -223,21 +244,25 @@ margin-bottom: 12px;
     &:hover{
         border: 2px solid $accent-color;
     }
+    
 }
 .contacts__btn-text{
-    font-family: 'Montserrat';
+    font-family: $primary-font;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 18px;
         color: $black-text-color;
-
+transition: color;
+    transition: $main-transition;
        
 }
 .contacts__icon{
-
+stroke: $black-text-color;
 width: 12px;
 height: 12px;
+transition: stroke;
+    transition: $main-transition;
 }
 
 
@@ -246,6 +271,7 @@ height: 12px;
 .modal {
 
     width: 100%;
+    
     
    
     margin-left: auto;
@@ -270,7 +296,7 @@ height: 12px;
     
 
     @media screen and (min-width: 320px) {
-        width: 280px;
+    width: 280px;
         height: 674px;
        
     }
@@ -351,7 +377,7 @@ color: $black-text-color;
     margin-right: auto;
     margin-bottom: 20px;
 // width: 221px;
-    font-family: 'Seymour One';
+    font-family: $secondary-font;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -371,7 +397,7 @@ color: $black-text-color;
 .form__subtext{
     
     margin-bottom: 24px;
-    font-family: 'Montserrat';
+    font-family: $primary-font;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -427,7 +453,7 @@ color: $black-text-color;
 }
 &::placeholder {
     color:$black-text-color;
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -455,11 +481,12 @@ color: $black-text-color;
 }
 
 .submit {
+    
     margin-top: 24px;
     padding: 12px 34px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Montserrat';
+    font-family: $primary-font;
 
     font-weight: 600;
     font-size: 12px;
@@ -478,11 +505,19 @@ color: $black-text-color;
     cursor: pointer;
 
     @media screen and(min-width:768px){
-        margin-top: 34px;
+        margin-top: 30px;
         font-size: 14px;
             line-height: 1.21;
     }
     
+}
+.submit__link{
+    width: 140px;
+
+    @media screen and(min-width:768px){
+
+        width: 152px;
+    }
 }
 
 
@@ -591,7 +626,7 @@ padding: 28px;
 
 .map__text{
 text-align: center;
-    font-family: 'Seymour One';
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
 color: $black-text-color;

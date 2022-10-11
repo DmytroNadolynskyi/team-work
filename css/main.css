@@ -190,7 +190,7 @@ html {
 
 .shop__link {
   margin-bottom: 24px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   display: block;
   color: #d6936d;
@@ -265,6 +265,11 @@ html {
   color: #131313;
   font-weight: 500;
   font-size: 12px;
+  transition: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shop__contact:hover, .shop__contact:focus {
+  color: #f8d24e;
 }
 @media screen and (min-width: 768px) {
   .shop__contact {
@@ -288,6 +293,7 @@ html {
 }
 
 .contacts-button {
+  padding: 0;
   width: 196px;
   height: 42px;
   gap: 6px;
@@ -296,6 +302,8 @@ html {
   justify-content: center;
   border: 0;
   border-radius: 10px;
+  transition: border background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .contacts-button {
@@ -303,16 +311,18 @@ html {
     margin-right: auto;
   }
 }
+.contacts-button:focus .contacts__btn-text {
+  color: #fcfcfc;
+}
+.contacts-button:focus .contacts__icon {
+  stroke: #fcfcfc;
+}
 
 .contacts-button--color {
   background-color: #f8d24e;
 }
 .contacts-button--color:hover {
   background-color: #0a8817;
-}
-.contacts-button--color:focus {
-  color: #fcfcfc;
-  display: block;
 }
 @media screen and (max-width: 767px) {
   .contacts-button--color {
@@ -329,17 +339,22 @@ html {
 }
 
 .contacts__btn-text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   color: #131313;
+  transition: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__icon {
+  stroke: #131313;
   width: 12px;
   height: 12px;
+  transition: stroke;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -410,7 +425,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  font-family: "Seymour One";
+  font-family: "Seymour One", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -428,7 +443,7 @@ html {
 
 .form__subtext {
   margin-bottom: 24px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -482,7 +497,7 @@ html {
 }
 .form__input::placeholder {
   color: #131313;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -506,7 +521,7 @@ html {
   padding: 12px 34px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.21;
@@ -522,9 +537,18 @@ html {
 }
 @media screen and (min-width: 768px) {
   .submit {
-    margin-top: 34px;
+    margin-top: 30px;
     font-size: 14px;
     line-height: 1.21;
+  }
+}
+
+.submit__link {
+  width: 140px;
+}
+@media screen and (min-width: 768px) {
+  .submit__link {
+    width: 152px;
   }
 }
 
@@ -601,7 +625,7 @@ html {
 
 .map__text {
   text-align: center;
-  font-family: "Seymour One";
+  font-family: "Seymour One", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #131313;
@@ -761,7 +785,7 @@ html {
 .address {
   justify-content: flex-end;
   display: flex;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   line-height: 1.81;
   font-weight: 700;
@@ -785,6 +809,11 @@ html {
 
 .address__tel {
   color: #fcfcfc;
+  transition-property: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__tel:hover, .address__tel:focus {
+  color: #f8d24e;
 }
 
 .under-footer {
@@ -804,7 +833,7 @@ html {
 
 .page-footer__copyright {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -843,18 +872,27 @@ html {
   }
 }
 
+.socials__item {
+  width: 35px;
+  height: 35px;
+}
+
+.socials__link:focus .page-footer__icon {
+  width: 38px;
+  height: 38px;
+  fill: #ffffff;
+}
+
+.socials__link:hover .page-footer__icon {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+}
+
 .page-footer__icon {
   width: 34px;
   height: 34px;
   fill: #84a178;
-}
-.page-footer__icon:hover {
-  width: 30px;
-  height: 30px;
-  fill: #ffffff;
-}
-.page-footer__icon:focus {
-  width: 50px;
-  height: 59px;
-  fill: #ffffff;
+  transition: fill;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */

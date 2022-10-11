@@ -2,7 +2,7 @@
 <defs>
 <symbol id="Frame-45" viewBox="0 0 32 32">
 <title>Frame-45</title>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
+<path fill="transparent" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
 </symbol>
 <symbol id="facebook" viewBox="0 0 32 32">
 <title>facebook</title>
