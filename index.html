@@ -99,9 +99,10 @@
     <div class="contacts__btn-cover">
        <button type="button" class="contacts-button contacts-button--color" data-modal-map-open> <span
              class="contacts__btn-text">Our Locations</span>
-              <svg class="contacts__icon" width="12" height="12">
+             <svg class="contacts__icon" width="12" height="12">
             <use href="./images/symbol-defs-contacts.svg#Frame-45"></use> 
-          </svg> </button> 
+          </svg>
+         </button> 
       <button type="button" class="contacts-button contacts-button--border" data-modal-open> <span
             class="contacts__btn-text">Franchise</span> <svg class="contacts__icon" width="12" height="12">
             <use href="./images/symbol-defs-contacts.svg#Frame-45"></use>
@@ -169,12 +170,18 @@
   
         <p class="map__text">Our Locations</p>
     <div class="google-map__cover">
-        <iframe
+        <iframe class="google-map__big"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6677.368016124134!2d-73.94538420587185!3d40.67832827796019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20New%20York%2C%20USA!5e0!3m2!1sde!2sua!4v1665366472443!5m2!1sde!2sua"
           width="448" height="260" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <button class="submit" type="submit">Open map</button>
+      <div class="google-map__cover--size">
+      <iframe class="google-map__small"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6677.368016124134!2d-73.94538420587185!3d40.67832827796019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20New%20York%2C%20USA!5e0!3m2!1sde!2sua!4v1665366472443!5m2!1sde!2sua"
+        width="224" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        <button class="submit" type="submit">Open map</button>
     </form>
     <button class="close" data-modal-map-close>
       <svg class="close__image">

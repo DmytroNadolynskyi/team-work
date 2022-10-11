@@ -1,5 +1,5 @@
 .contacts{
-    
+   
 padding-bottom: 19.5px;
  background-color: $main-background-color;
 
@@ -12,7 +12,8 @@ padding-bottom: 19.5px;
  }
 }
 .contacts__list{
-
+margin-left: auto;
+    margin-right: auto;
 margin-bottom: 32px;
 
 @media screen and(min-width:768px){
@@ -26,6 +27,8 @@ margin-bottom: 32px;
         }
 }
 .contacts__shop{
+    margin-left: auto;
+        margin-right: auto;
     @media screen and(max-width:767px) {
         margin-bottom: 19px;
 background-color: $footer-cards-background ;
@@ -200,6 +203,13 @@ margin-bottom: 12px;
 
 .contacts-button--color{
     background-color:$yellow-color ;
+    &:hover{
+        background-color:$accent-color;
+    }
+    &:focus{
+        color:$white-text-color;
+        display: block;
+    }
     @media screen and(max-width:767px){
         margin-bottom: 16px;
     }
@@ -209,6 +219,10 @@ margin-bottom: 12px;
 .contacts-button--border{
     border: 2px solid #F8D24E;
     background-color: $main-background-color;
+
+    &:hover{
+        border: 2px solid $accent-color;
+    }
 }
 .contacts__btn-text{
     font-family: 'Montserrat';
@@ -218,6 +232,7 @@ margin-bottom: 12px;
         line-height: 18px;
         color: $black-text-color;
 
+       
 }
 .contacts__icon{
 
@@ -231,13 +246,18 @@ height: 12px;
 .modal {
 
     width: 100%;
+    
+   
     margin-left: auto;
     margin-right: auto;
     
 
     transform: scaleX(1);
-    // transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
 
 
@@ -245,29 +265,33 @@ height: 12px;
     
     border-radius: 10px;
     border: 2px solid $yellow-color;
-    // padding: 32px 60px;
+    
+        
+    
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        height: 609px;
+    @media screen and (min-width: 320px) {
+        width: 280px;
+        height: 674px;
+       
     }
 
-    @media screen and (min-width: 768px) and (min-height: 609px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px){ 
+        
         width: 568px;
-        height: 668px;
-
-
+            height: 668px;
     }
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 568px;
+    //     height: 668px;
+
+
+    // }
 
 
 }
+//and (min-height: 609px)// {
+
 
 .close {
     position: absolute;
@@ -310,78 +334,90 @@ height: 12px;
 
 
 .form {
-    padding: 32px 42px;
+    padding: 25px;
+    @media screen and(min-width:768px){
+        padding: 32px 42px;
+    }
+    
     
 }
 
 
 .form__text {
+
+
+color: $black-text-color;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 24px;
-width: 322px;
-
+    margin-bottom: 20px;
+// width: 221px;
     font-family: 'Seymour One';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 1.4;
+        font-size: 16px;
+        line-height: 1.5; 
+    // text-align: center;
         
-    text-align: center;
+    @media screen and(min-width:768px){
+        margin-bottom: 24px;
+            width: 322px;
+            font-size: 20px;
+            line-height: 1.4;
+            text-align: center;
+    }
         
-    
-        color: #131313;
+        
 }
 .form__subtext{
     
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
+        font-size: 14px;
+        line-height: 1.37;
+        color: $black-text-color;
+
+@media screen and(min-width:768px){
+    margin-bottom: 32px;
         font-size: 16px;
         line-height: 1.37;
+}
         
-    
-    
-        color: $black-text-color;
 }
 
-.form__field {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    /* outline: 1px solid blue; */
 
-
-    &:first-child {
-        margin-top: 0;
-    }
-}
-
-.policy-check {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
 .input__cover{
-    width: 368px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+
+    @media screen and(min-width:768px){
+        width: 368px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
 }
 .form__input {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     border: 1px solid #84A178;
     border-radius: 10px;
-    height: 42px;
+    height: 32px;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 12px;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(248, 210, 78, 0.1);
    
+    @media screen and(min-width:768px){
+        height: 42px;
+            padding-left: 16px;
+            margin-bottom: 16px;
+    }
+    
 
 
    &:focus {
@@ -408,62 +444,25 @@ width: 322px;
 
 .form__input-comment {
     
-    padding-top: 11px;
+    padding-top: 8px;
     resize: none;
+    height: 64px;
+
+@media screen and(min-width:768px){
     height: 84px;
-    
-
-
-    // &:focus {
-    //     outline: none !important;
-    //     border: 1px solid #2196F3;
-
-    // }
-
-    // &::placeholder {
-    //     font-family: 'Montserrat';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         font-size: 14px;
-    //         line-height: 1.42;
-            
-    // }
+    padding-top: 11px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.qwer {
-    @media screen and(max-width:1199px) {
-        font-size: 12px;
-    }
-
-}
-
-.form__policy-link {
-    font-size: 12px;
-    margin-left: 3px;
-    color: #2196F3;
 }
 
 .submit {
-    margin-top: 32px;
+    margin-top: 24px;
     padding: 12px 34px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat';
 
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.21;
     background-color: $yellow-color;
     
@@ -477,7 +476,15 @@ width: 322px;
 
     color: $black-text-color;
     cursor: pointer;
+
+    @media screen and(min-width:768px){
+        margin-top: 34px;
+        font-size: 14px;
+            line-height: 1.21;
+    }
+    
 }
+
 
 
 
@@ -529,12 +536,14 @@ width: 322px;
 
 
 .modal-map {
-padding: 32px 60px;
+padding: 28px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 
-
+.google-map__big{
+        display: none;
+    }
     transform: scaleX(1);
     // transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -546,22 +555,33 @@ padding: 32px 60px;
     border-radius: 10px;
     border: 2px solid $yellow-color;
     // padding: 32px 60px;
-
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        height: 458px;
-    }
-
-    @media screen and (min-width: 768px) and (min-height: 609px) {
-        position: absolute;
+    position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 320px) {
+        
+        width: 280px;
+        height: 365px;
+        
+    }
+
+    @media screen and (min-width: 768px){ //and (min-height: 609px) 
+        .google-map__small{
+                display: none;
+            }
+        .google-map__big{
+            display: block;
+        }
+        padding: 32px 60px;
+        width: 568px;
+            height: 458px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 568px;
-        height: 478px;
+        height: 458px;
 
 
     }
@@ -570,18 +590,34 @@ padding: 32px 60px;
 }
 
 .map__text{
-    margin-bottom: 32px;
-    text-align: center;
+text-align: center;
     font-family: 'Seymour One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.4;
-        color: $black-text-color;
+    font-style: normal;
+    font-weight: 400;
+color: $black-text-color;
+margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @media screen and(min-width:768px){
+        margin-bottom: 32px;
+        
+            font-size: 20px;
+            line-height: 1.4;
+    }
+    
 }
  .google-map__cover{
     border-radius: 10px;
     overflow: hidden;
+    max-height: 260px;
+    max-width: 448px;
+ }
+ .google-map__cover--size{
+    border-radius: 10px;
+        overflow: hidden;
+        max-height: 199px;
+        max-width: 224px;
  }
 .close {
     position: absolute;
@@ -590,8 +626,8 @@ padding: 32px 60px;
     justify-content: center;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 
     background-color: #FFFFFF;
     border-radius: 50%;
