@@ -140,7 +140,8 @@ html {
     margin-bottom: 19px;
     background-color: #ffffff;
     padding: 40px 32px;
-    width: 280px;
+    min-width: 280px;
+    max-width: 480px;
     border-radius: 24px;
   }
   .contacts__shop:last-child {
@@ -262,6 +263,7 @@ html {
 }
 
 .shop__contact {
+  display: block;
   color: #131313;
   font-weight: 500;
   font-size: 12px;
@@ -577,6 +579,10 @@ html {
 
 .is-hidden.modal {
   transform: translate(-50%, -50%) scale(0.4);
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .modal-map {

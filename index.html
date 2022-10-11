@@ -104,7 +104,7 @@
             <use href="./images/symbol-defs-contacts.svg#Frame-45"></use> 
           </svg>
          </button> 
-      <button type="button" class="contacts-button contacts-button--border" data-modal-open> <span
+      <button type="button" class="contacts-button contacts-button--border" data-modal-contacts-open> <span
             class="contacts__btn-text">Franchise</span> <svg class="contacts__icon" width="12" height="12">
             <use href="./images/symbol-defs-contacts.svg#Frame-45"></use>
           </svg> </button>
@@ -142,7 +142,7 @@
 </footer>
 
 </body>
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-contacts>
   <div class="modal ">
     <form class="form">
       <div class="form-text__cover">
@@ -159,7 +159,7 @@
       </div>
      <button class="submit" type="submit">Submit</button>
       </form>
-       <button class="close" data-modal-close>
+       <button class="close" data-modal-contacts-close>
       <svg class="close__image">
         <use href="./images/symbol-defs.svg#close"></use>
       </svg>
@@ -183,7 +183,7 @@
         width="224" height="200" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-        <a href="https://goo.gl/maps/FYwcBPDQmrhRuqtB9" class="submit submit__link" >Open map</a>
+        <a href="https://goo.gl/maps/FYwcBPDQmrhRuqtB9" target="_blank" class="submit submit__link" >Open map</a>
     </form>
     <button class="close" data-modal-map-close>
       <svg class="close__image">
@@ -192,7 +192,7 @@
     </button>
   </div>
 </div>
-<script src="./js/modal.js"></script>
+<script src="./js/modal-contacts.js"></script>
 <script src="./js/modal-map.js"></script>
 
 </html>
